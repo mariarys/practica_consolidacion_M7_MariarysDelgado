@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container align-items-center p-5" aria-label="Sección de Laboratorios">
+
+    <div class="form">
+        <h2 class="mb-3 text-center">Ingresar los Datos del Laboratorio</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre del Laboratorio</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Ingresar el nombre del laboratorio">
+            </div>
+            <div class="mb-3">
+                <label for="Ciudad" class="form-label">Ciudad</label>
+                <textarea type="text" class="form-control" id="ciudad" name="ciudad" required placeholder="Ingresar la Ciudad del laboratorio"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="pais" class="form-label">Pais</label>
+                <input type="text" class="form-control" id="pais" name="pais" required placeholder="Ingresar el pais del laboratorio">
+            </div>
+           
+            <div class="text-center">
+                <button type="submit" class="btn btn-secondary">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<p>¿Información de los Laboratorios?</p>
+<a href="{% url 'informacion_laboratorios' %}">Ir a Información de los Laboratorios --></a>
+{% endblock %}

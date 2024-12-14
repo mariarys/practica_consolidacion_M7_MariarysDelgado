@@ -1,0 +1,26 @@
+
+table.table {
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 10px;  
+}
+
+table.table th, table.table td {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid #000000; 
+}
+
+.form {
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 20px;  
+    background-color: #f9f9f9; 
+    border-radius: 10px;  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+}
+
+
+    
